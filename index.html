@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
+    <!-- Vanilla CSS -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="plugins/fonts/fonts.css" />
+    <!-- Tailwind CSS -->
+    <script src="plugins/tailwind/tailwind.js"></script>
+    <!-- Tailwind Customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          colors: {
+            primary: "#1c9af0",
+            black: "#010001",
+            white: "#e7e8ec",
+            gray: "#16181d",
+            grey: "#59595a",
+          },
+          screens: {
+            sm: "550px",
+            // => @media (min-width: 550px) { ... }
+
+            md: "800px",
+            // => @media (min-width: 700px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="sm:hidden bg-black text-white overflow-x-hidden  scrollbar-thin scrollbar-thumb-rounded-full scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+    <nav class="sticky bg-black w-screen">
+      <div class="px-3 py-2 flex justify-between">
+        <img
+          src="images/my-pic.png"
+          alt=""
+          class="w-12 h-12 rounded-full bg-gray object-cover"
+        />
+        <button class="text-primary">
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+        </button>
+        <button class="text-primary text-lg invisible">
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+        </button>
+      </div>
+      <hr class="text-gray font-semibold" />
+      <div class="flex justify-around mt-6">
+        <a
+          href=""
+          class="text-md font-semibold text-white pb-3 border-b-4 border-primary"
+        >
+          For you
+        </a>
+        <a href="" class="text-md text-grey font-semibold"> Following </a>
+      </div>
+      <hr class="text-gray font-semibold" />
+    </nav>
+
+    <!-- Main Section Starts-->
+    <section class="px-3 pt-6">
+      <!-- Post Card Starts -->
+      <div>
+        <div class="flex justify-between text-white">
+          <div class="flex justify-start space-x-2">
+            <img
+              src="images/my-pic.png"
+              alt=""
+              class="w-14 h-14 rounded-full bg-gray object-cover"
+            />
+            <p class="text-white font-semibold">
+              Samuel
+              <span class="text-grey px-2">@therealsilkart . 16h</span>
+            </p>
+          </div>
+
+          <div>
+            <button class="text-grey">
+              <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pl-16 -mt-7">
+          <p class="">
+            Welcome to the world of Samuel's Twitter
+            <span class="text-primary">#NewProfilePics</span>
+          </p>
+          <img
+            src="images/my-pic.png"
+            alt=""
+            class="mx-auto mt-4 bg-gray rounded-xl w-68 h-68"
+          />
+          <div class="flex justify-between mt-4">
+            <p class="text-grey font-semibold">
+              <i class="fa-solid fa-reply fa-lg"></i>
+              <span class="px-1">197</span>
+            </p>
+
+            <p class="text-grey font-semibold">
+              <i class="fa-solid fa-retweet fa-lg"></i>
+              <span class="px-1">1.2K</span>
+            </p>
+
+            <p class="text-grey font-semibold">
+              <i class="fa-regular fa-heart fa-lg"></i>
+              <span class="px-1">10.1K</span>
+            </p>
+
+            <p class="text-grey font-semibold">
+              <i class="fa-solid fa-share fa-lg"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="text-grey my-5">
+
+
+      <div>
+        <div class="flex justify-between text-white">
+          <div class="flex justify-start space-x-2">
+            <img
+              src="images/my-pic.png"
+              alt=""
+              class="w-14 h-14 rounded-full bg-gray object-cover"
+            />
+            <p class="text-white font-semibold">
+              Samuel
+              <span class="text-grey px-2">@therealsilkart . 16h</span>
+            </p>
+          </div>
+
+          <div>
+            <button class="text-grey">
+              <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pl-16 -mt-7">
+          <p class="">
+            Can only Admire them
+            <span class="text-primary">#TheGOATs</span>
+          </p>
+          <img
+            src="images/img4.jpg_large"
+            alt=""
+            class="mx-auto mt-4 bg-gray rounded-xl w-68 h-68"
+          />
+          <div class="flex justify-between mt-4">
+            <p class="text-grey font-semibold">
+              <i class="fa-solid fa-reply fa-lg"></i>
+              <span class="px-1">197</span>
+            </p>
+
+            <p class="text-grey font-semibold">
+              <i class="fa-solid fa-retweet fa-lg"></i>
+              <span class="px-1">1.2K</span>
+            </p>
+
+            <p class="text-grey font-semibold">
+              <i class="fa-regular fa-heart fa-lg"></i>
+              <span class="px-1">10.1K</span>
+            </p>
+
+            <p class="text-grey font-semibold">
+              <i class="fa-solid fa-share fa-lg"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="text-grey my-5">
+
+
+      <div>
+        <div class="flex justify-between text-white">
+          <div class="flex justify-start space-x-2">
+            <img
+              src="images/my-pic.png"
+              alt=""
+              class="w-14 h-14 rounded-full bg-gray object-cover"
+            />
+            <p class="text-white font-semibold">
+              Samuel
+              <span class="text-grey px-2">@therealsilkart . 16h</span>
+            </p>
+          </div>
+
+          <div>
+            <button class="text-grey">
+              <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pl-16 -mt-7">
+          <p class="">
+            A Quick Look at my dream car
+            <span class="text-primary">#Bughatti</span>
+          </p>
+          <img
+            src="images/img3.jpg"
+            alt=""
+            class="mx-auto mt-4 bg-gray rounded-xl w-68 h-68"
+          />
+          <div class="flex justify-between mt-4">
+            <p class="text-grey font-semibold">
+              <i class="fa-solid fa-reply fa-lg"></i>
+              <span class="px-1">197</span>
+            </p>
+
+            <p class="text-grey font-semibold">
+              <i class="fa-solid fa-retweet fa-lg"></i>
+              <span class="px-1">1.2K</span>
+            </p>
+
+            <p class="text-grey font-semibold">
+              <i class="fa-regular fa-heart fa-lg"></i>
+              <span class="px-1">10.1K</span>
+            </p>
+
+            <p class="text-grey font-semibold">
+              <i class="fa-solid fa-share fa-lg"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="text-grey my-5">
+
+      <!-- Post Card Ends -->
+    </section>
+
+
+    <!-- Footer Section Starts -->
+     <footer class="sticky bg-black w-screen border-t border-grey pb-2 bottom-0">
+        <div class=" px-4 flex justify-between mt-4">
+            <p class="text-white font-semibold border-b-4 border-primary pb-2">
+              <i class="fa-solid fa-house-chimney-window fa-xl"></i>
+            </p>
+
+            <p class="text-white font-semibold">
+              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </p>
+
+            <p class="text-white font-semibold">
+             <i class="fa-solid fa-microphone-lines fa-xl"></i>
+            </p>
+
+            <p class="text-white font-semibold">
+              <i class="fa-solid fa-bell fa-xl"></i>
+            </p>
+
+            <p class="text-white font-semibold">
+                <i class="fa-solid fa-envelope fa-xl"></i>
+                <sup class="-ml-2 text-white px-1 rounded-full bg-primary">
+                 2
+                </sup>
+            </p>
+          </div>
+        </div>
+     </footer>
+     <!-- Footer Section Ends -->
+  </body>
+</html>
